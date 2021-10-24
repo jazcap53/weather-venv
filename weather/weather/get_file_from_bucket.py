@@ -24,7 +24,6 @@ bucket_name = "aaj-raining-buckets"
 object_name = "2021-10-22T20:17:00-04:00.json"
 
 
-
 logging.basicConfig(filename='test_log.log', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
