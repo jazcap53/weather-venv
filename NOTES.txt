@@ -1,0 +1,8 @@
+2021-05-28_09:08 | If weather.py is run twice in the same minute, the output from the second run will overwrite that from the first.  NON-ISSUE
+2021-05-29_05:02 | run_it.py inserts time != hr:17. Make it accept -d switch, else not run if mins != 17.  PROBABLY DON'T DO THIS
+2021-05-29_20:00 | list_bucket_contents.py, but remove_bucket_items.py  INCONSISTENT!  FIXED
+2021-05-29_20:27 | decode precipitation type from weather.py: ag for CODE_TABLE to see model.  DONE
+2021-05-31_10:37 | rename CODE_TABLE to WEATHER_CODES; new table could be called PRECIP_CODES  DONE
+2021-05-31_15:19 | perhaps add feature to log whether weather.py was called by cron or manually ?
+2021-06-07_14:12 | add code to retrieve data from s3 bucket
+2021-06-07_14:12 | decide how various small functions should be organized. Make a class?

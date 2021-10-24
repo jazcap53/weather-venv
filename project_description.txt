@@ -1,0 +1,22 @@
+Please write a python script to pull data from public api and publish it to your github repo:
+https://github.com/yourname
+Get weather for your city (or any US city of your choice), as well as weather from Detroit,
+Michigan, every day for 1 week. Starting with the date of this email, have it load to S3/Google
+Cloud Storage (GCS) location. Share that location and the github code repo.
+Requirements:
+1. Python script should work when we git clone and run python program.py.
+2. Script pulls weather data and date/time from public rest-api's for Detroit and the
+additional city you chose. Load your results to S3/GCS.
+3. S3/GCS is accessible to us, you decide how we get access.
+4. Data in S3/GCS is formatted in a way that's easily loadable to a database table.
+5. Commands to load data from S3/GCS to postgres or mysql or redshift table or Bigquery
+and DDL for table.
+6. Ideally the goal is for us to easily query :
+select * from pubilc.weather_daily_table order by weather_date, location;
+7. Optional not required bonus: Publish the data to Tableau public or similar location.
+
+
+My addition:  NAH
+    If a request returns a response without a weather type field, try again in 12 minutes, then in another 12 minutes.
+    If the response still doesn't have a weather type field, set weather type to 'Unknown'.
+
