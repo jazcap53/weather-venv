@@ -8,6 +8,7 @@ from pprint import pprint
 
 
 class WeatherBucket:
+    """List the files in an S3 bucket"""
     BASE_BUCKET_NAME = 'aaj-raining-buckets'
 
     def __init__(self, client):
